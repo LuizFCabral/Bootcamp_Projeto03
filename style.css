@@ -1,7 +1,16 @@
+:root {
+	--verde-escuro: #396641;
+}
+
 body {
 	background-color: #c5c1c0;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-family: "arial";
+}
+
+h1 {
+	font-size: 0.8rem;
+	margin: 0px;
+	color: var(--verde-escuro);
 }
 
 h5 {
@@ -12,6 +21,7 @@ h5 {
 p {
 	font-size: 0.7em;
 	margin: 0px;
+	font-weight: 600;
 }
 
 .container {
@@ -62,4 +72,10 @@ p {
 	flex-direction: column;
 	align-items: center;
 	padding: 5px 0px;
+}
+
+.dinheiro {
+	color: var(--verde-escuro);
+	font-size: 0.7rem;
+	font-weight: bold;
 }
