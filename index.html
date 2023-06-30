@@ -35,10 +35,10 @@
 							/><input
 								type="number"
 								step="1"
-								min="1"
+								min="0"
 								max=""
 								name="quantity"
-								value="1"
+								value="0"
 								title="Qty"
 								class="input-text qty text"
 								size="4"
@@ -63,10 +63,10 @@
 							/><input
 								type="number"
 								step="1"
-								min="1"
+								min="0"
 								max=""
 								name="quantity"
-								value="1"
+								value="0"
 								title="Qty"
 								class="input-text qty text"
 								size="4"
@@ -91,10 +91,10 @@
 							/><input
 								type="number"
 								step="1"
-								min="1"
+								min="0"
 								max=""
 								name="quantity"
-								value="1"
+								value="0"
 								title="Qty"
 								class="input-text qty text"
 								size="4"
@@ -125,10 +125,10 @@
 							/><input
 								type="number"
 								step="1"
-								min="1"
+								min="0"
 								max=""
 								name="quantity"
-								value="1"
+								value="0"
 								title="Qty"
 								class="input-text qty text"
 								size="4"
@@ -153,10 +153,10 @@
 							/><input
 								type="number"
 								step="1"
-								min="1"
+								min="0"
 								max=""
 								name="quantity"
-								value="1"
+								value="0"
 								title="Qty"
 								class="input-text qty text"
 								size="4"
@@ -181,10 +181,10 @@
 							/><input
 								type="number"
 								step="1"
-								min="1"
+								min="0"
 								max=""
 								name="quantity"
-								value="1"
+								value="0"
 								title="Qty"
 								class="input-text qty text"
 								size="4"
@@ -216,7 +216,18 @@
 					id="email"
 				/>
 			</div>
-			<button class="btn-calc">Calcular</button>
+			<button class="btn-calc" onclick="calcular()">Calcular</button>
+			<div class="info-compra">
+				<div class="tittle-compra">
+					Caro <b id="tittle-compra">.....</b>
+				</div>
+				<p>Sequem os dados do seu pedido</p>
+				<p>O seu pedido é</p>
+				<ul id="lista"></ul>
+				<b class="preco-final" id="preco-final">
+					Preço final: R$ 0,00
+				</b>
+			</div>
 		</div>
 	</body>
 	<script src="script.js"></script>

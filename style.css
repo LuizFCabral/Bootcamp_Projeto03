@@ -167,3 +167,15 @@ p {
 	color: #fff;
 	font-size: 0.9rem;
 }
+
+/* Dados da compra */
+.info-compra {
+	width: 95%;
+	text-align: start;
+}
+
+.info-compra > p,
+div {
+	font-size: 0.8rem;
+	font-weight: normal;
+}

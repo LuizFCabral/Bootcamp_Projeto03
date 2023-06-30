@@ -55,3 +55,21 @@ String.prototype.getDecimals ||
 				: b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())),
 			a.trigger("change");
 	});
+
+//Calcular
+function calcular() {
+	let precoFinal = 0;
+	const precos = [30, 25, 22, 10, 8, 12];
+
+	let nome = $("#nome").val();
+	$("#tittle-compra").text(`${nome}`);
+
+	let qtd = $(".input-text");
+	for (let i = 0; i < qtd.length; i++) {
+		precoFinal += qtd.eq(i).val() * precos[i];
+	}
+
+	$("#preco-final").text(
+		`Preço final R$ ${precoFinal.toFixed(2).replace(".", ",")}`
+	);
+}
