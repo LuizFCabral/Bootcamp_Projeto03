@@ -1,170 +1,170 @@
 :root {
-    --verde-escuro: #264f17;
-    --input-bg: #e8f0fd;
-    --input-quantity: #efefef;
-    --bg-card: #f5f5f5;
+	--verde-escuro: #264f17;
+	--input-bg: #e8f0fd;
+	--input-quantity: #efefef;
+	--bg-card: #f5f5f5;
 }
 
 body {
-    background-color: #c5c1c0;
-    font-family: "arial";
+	background-color: #c5c1c0;
+	font-family: "arial";
 }
 
 h1 {
-    font-size: 0.8rem;
-    margin: 0px;
-    color: var(--verde-escuro);
+	font-size: 0.8rem;
+	margin: 0px;
+	color: var(--verde-escuro);
 }
 
 h3 {
-    margin-bottom: 5px;
-    margin-top: 0px;
+	margin-bottom: 5px;
+	margin-top: 0px;
 }
 
 p {
-    font-size: 1rem;
-    margin: 0px;
-    font-weight: 550;
+	font-size: 1rem;
+	margin: 0px;
+	font-weight: 550;
 }
 
 .container {
-    background-color: #fff;
-    border-radius: 10px;
-    width: 1000px;
-    margin: auto;
-    box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 900px;
+	margin: auto;
+	box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .img-home {
-    width: 95%;
-    margin-top: 15px;
+	width: 95%;
+	margin-top: 15px;
 }
 
 .home-title {
-    font-size: 2rem;
-    margin-top: 5px;
+	font-size: 2rem;
+	margin-top: 5px;
 }
 
 .card {
-    width: 95%;
-    background-color: var(--bg-card);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-    margin-top: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
+	width: 95%;
+	background-color: var(--bg-card);
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+	margin-top: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0px;
 }
 
 .card-itens {
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-    margin-top: 20px;
+	display: flex;
+	width: 90%;
+	justify-content: space-around;
+	margin-top: 20px;
 }
 
 .card-item {
-    width: 27%;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5px 0px;
+	width: 27%;
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px 0px;
 }
 
 /* -- quantity box -- */
 
 .quantity {
-    display: inline-block;
+	display: inline-block;
 }
 
 .quantity .input-text.qty {
-    width: 26px;
-    height: 30px;
-    padding: 0 5px;
-    text-align: center;
-    background-color: transparent;
-    border: 1px solid var(--input-quantity);
+	width: 26px;
+	height: 30px;
+	padding: 0 5px;
+	text-align: center;
+	background-color: transparent;
+	border: 1px solid var(--input-quantity);
 }
 
 .quantity.buttons_added {
-    text-align: left;
-    position: relative;
-    white-space: nowrap;
-    vertical-align: top;
+	text-align: left;
+	position: relative;
+	white-space: nowrap;
+	vertical-align: top;
 }
 
 .quantity.buttons_added input {
-    display: inline-block;
-    margin: 0;
-    vertical-align: top;
-    box-shadow: none;
+	display: inline-block;
+	margin: 0;
+	vertical-align: top;
+	box-shadow: none;
 }
 
 .quantity.buttons_added .minus,
 .quantity.buttons_added .plus {
-    padding: 7px 10px 8px;
-    height: 30px;
-    background-color: #ffffff;
-    border: 1px solid var(--input-quantity);
-    cursor: pointer;
+	padding: 7px 10px 8px;
+	height: 30px;
+	background-color: #ffffff;
+	border: 1px solid var(--input-quantity);
+	cursor: pointer;
 }
 
 .quantity.buttons_added .minus {
-    border-right: 0;
+	border-right: 0;
 }
 
 .quantity.buttons_added .plus {
-    border-left: 0;
+	border-left: 0;
 }
 
 .quantity.buttons_added .minus:hover,
 .quantity.buttons_added .plus:hover {
-    background: #eeeeee;
+	background: #eeeeee;
 }
 
 .quantity input::-webkit-outer-spin-button,
 .quantity input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	margin: 0;
 }
 
 .quantity.buttons_added .minus:focus,
 .quantity.buttons_added .plus:focus {
-    outline: none;
+	outline: none;
 }
 
 /* Dados Pessoais */
 
 .input-data {
-    width: 80%;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    height: 25px;
-    outline: none;
-    padding: 5px;
-    font-size: 0.9rem;
+	width: 80%;
+	border: none;
+	border-radius: 5px;
+	margin-top: 15px;
+	height: 25px;
+	outline: none;
+	padding: 5px;
+	font-size: 0.9rem;
 }
 
 .input-data:focus {
-    background-color: var(--input-bg);
+	background-color: var(--input-bg);
 }
 
 .btn-calc {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background-color: #0069d9;
-    width: 95%;
-    height: 35px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 0.9rem;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	background-color: #0069d9;
+	width: 95%;
+	height: 35px;
+	border: none;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 0.9rem;
 }
