@@ -58,17 +58,68 @@ String.prototype.getDecimals ||
 
 //Calcular
 function calcular() {
-	let precoFinal = 0;
-	const precos = [30, 25, 22, 10, 8, 12];
+	//Sistema
+	$("#lista").empty();
+	$("#info-compra").show();
 
+	//Items
+	let precoFinal = 0;
+	const itens = [
+		{
+			descr: "Bife com batata",
+			preco: 30,
+			qtd: 0,
+		},
+		{
+			descr: "Coxa de Frango Crocante",
+			preco: 25,
+			qtd: 0,
+		},
+		{
+			descr: "Carne de panela",
+			preco: 22,
+			qtd: 0,
+		},
+		{
+			descr: "Farofa",
+			preco: 10,
+			qtd: 0,
+		},
+		{
+			descr: "Salada",
+			preco: 8,
+			qtd: 0,
+		},
+		{
+			descr: "Torresmo",
+			preco: 12,
+			qtd: 0,
+		},
+	];
+
+	//Usuário
 	let nome = $("#nome").val();
 	$("#tittle-compra").text(`${nome}`);
 
+	//Calculo da compra
 	let qtd = $(".input-text");
 	for (let i = 0; i < qtd.length; i++) {
-		precoFinal += qtd.eq(i).val() * precos[i];
+		if (parseFloat(qtd.eq(i).val()) !== 0) {
+			let subtotal = 0;
+			itens[i].qtd = parseFloat(qtd.eq(i).val());
+			subtotal = itens[i].qtd * itens[i].preco;
+			precoFinal += subtotal;
+			$("#lista").append(
+				`<li>Prato: ${itens[i].descr} - Preço unitário: R$ ${itens[
+					i
+				].preco
+					.toFixed(2)
+					.replace(".", ",")} - Quantidade: ${
+					itens[i].qtd
+				} - Total: R$ ${subtotal.toFixed(2).replace(".", ",")}.</li>`
+			);
+		}
 	}
-
 	$("#preco-final").text(
 		`Preço final R$ ${precoFinal.toFixed(2).replace(".", ",")}`
 	);
